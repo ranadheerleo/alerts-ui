@@ -1,0 +1,19 @@
+.list-view, .ag-list-view{
+  width:100%;
+  height: 100%;
+}
+
+form{
+  margin-top: 0.5em;
+  height: 100%;
+}
+
+.form-group.row div{
+  height: 30px;
+}
+
+.form-group.row .btn, .form-group.row input{
+  padding: 2px;
+  height: 25px;
+  font-size: 12px;
+}

@@ -1,0 +1,18 @@
+
+<div class="container">
+  <table class="table table-hover" *ngFor = "let key of objectKeys(filters)">
+    <thead>
+    <tr>
+      <th>{{key}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let filterKey of objectKeys(filters[key])" (click)="onFilter(key, filterKey)" class="filter-row">
+      <td>{{filterKey}}</td>
+      <td>{{filters[key][filterKey]}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
